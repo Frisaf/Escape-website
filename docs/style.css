@@ -1,0 +1,104 @@
+html,
+body {
+    padding: 0;
+    margin: 0;
+}
+
+main {
+    padding: 0;
+    margin: 0;
+}
+
+.mainBox {
+    font-family: 'Ubuntu', sans-serif;
+    background-position: center;
+    background-image: image-set("images/scene 1.png");
+    text-align: center;
+    display: grid;
+    background-size: 100%;
+    color: white;
+}
+
+.centerBackground {
+    margin: auto;
+    width: 75%;
+    height: 100%;
+    padding: 10px;
+    text-align: center;
+    align-self: center;
+    padding-top: 50px;
+}
+
+.information {
+    text-align: left;
+    font-family: 'Ubuntu', sans-serif;
+    background-color: rgb(22, 22, 22);
+    color: whitesmoke;
+    padding: 20px;
+    height: 100%;
+}
+
+.downloadPage {
+    padding: 20px;
+    background-image:image-set("images/door choice scene 3.png");
+    text-align: center;
+    background-position: center;
+    display: grid;
+    background-size: 100%;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+.visibilityBox {
+    background-color: rgba(0, 0, 0, .5);
+    padding: 10px;
+    border-radius: 100px;
+}
+
+div.listBox {
+    text-align: center;
+}
+
+.centerList {
+    text-align: left;
+    display: inline-block;
+}
+
+.navbar {
+    list-style: none;
+    display: flex;
+    gap: 1rem;
+    padding: 0;
+    margin: 0;
+    top: 0;
+    background-color: black;
+}
+
+.navbar a {
+    float: left;
+    font-size: 16px;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+.navbar a:hover {
+    background-color: red;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: black;
+    width: 100%;
+    position: fixed;
+    transition: top 0.3s;
+}
+
+div.navcontent {
+    width: fit-content;
+    height: inherit;
+    display: flex;
+    flex-direction: row-reverse;
+}
