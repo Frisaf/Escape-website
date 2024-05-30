@@ -50,8 +50,9 @@ main {
 
 .visibilityBox {
     background-color: rgba(0, 0, 0, .5);
-    padding: 10px;
+    padding: 50px;
     border-radius: 100px;
+    margin: 10px;
 }
 
 div.listBox {
@@ -61,6 +62,21 @@ div.listBox {
 .centerList {
     text-align: left;
     display: inline-block;
+}
+
+.contactInfo {
+    list-style: none;
+    gap: 1rem;
+    padding: 0;
+    margin: 0;
+    top: 0;
+    background-color: none;
+}
+
+.contactInfo a {
+    float: center;
+    text-align: center;
+    text-decoration: none;
 }
 
 .navbar {
