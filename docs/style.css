@@ -40,7 +40,27 @@ main {
 
 .downloadPage {
     padding: 20px;
+    background-image:image-set("images/magico hands scene 2.png");
+    text-align: center;
+    background-position: center;
+    display: grid;
+    background-size: 100%;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+.aboutPage {
+    padding: 20px;
     background-image:image-set("images/door choice scene 3.png");
+    text-align: center;
+    background-position: center;
+    display: grid;
+    background-size: 100%;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+.creditsBox {
+    padding: 20px;
+    background-image: image-set("images/scene 1.png");
     text-align: center;
     background-position: center;
     display: grid;
@@ -53,6 +73,7 @@ main {
     padding: 50px;
     border-radius: 100px;
     margin: 10px;
+    margin-top: 0;
 }
 
 div.listBox {
@@ -65,18 +86,20 @@ div.listBox {
 }
 
 .contactInfo {
-    list-style: none;
-    gap: 1rem;
-    padding: 0;
-    margin: 0;
-    top: 0;
-    background-color: none;
+    height: fit-content;
+    display: flex;
 }
 
-.contactInfo a {
-    float: center;
-    text-align: center;
-    text-decoration: none;
+.mail {
+    width: 50%;
+    text-align: right;
+    padding-right: 50px;
+}
+
+.github {
+    width: 50%;
+    text-align: left;
+    padding-left: 50px;
 }
 
 .navbar {
@@ -102,6 +125,14 @@ div.listBox {
     background-color: red;
 }
 
+.navbar a:visited {
+    color: white;
+}
+
+.navbar a:link {
+    color: white;
+}
+
 nav {
     display: flex;
     align-items: center;
@@ -117,4 +148,22 @@ div.navcontent {
     height: inherit;
     display: flex;
     flex-direction: row-reverse;
+}
+
+a:link {
+    color: aqua;
+    background-color: transparent;
+    text-decoration: none;
+}
+
+a:hover {
+    color: aquamarine;
+    background-color: transparent;
+    text-decoration: none;
+}
+
+a:visited {
+    color: lightseagreen;
+    background-color: transparent;
+    text-decoration: none;
 }
