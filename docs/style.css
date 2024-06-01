@@ -34,7 +34,7 @@ main {
     font-family: 'Ubuntu', sans-serif;
     background-color: rgb(22, 22, 22);
     color: whitesmoke;
-    padding: 20px;
+    padding: 40px;
     height: 100%;
 }
 
@@ -58,7 +58,7 @@ main {
     font-family: 'Ubuntu', sans-serif;
 }
 
-.creditsBox {
+.creditsPage {
     padding: 20px;
     background-image: image-set("images/scene 1.png");
     text-align: center;
@@ -167,3 +167,29 @@ a:visited {
     background-color: transparent;
     text-decoration: none;
 }
+
+.tab {
+    overflow: hidden;
+    background-color: transparent
+}
+
+.tab button {
+    background-color: inherit;
+    float: left;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    padding: 14px 16px;
+    transition: 0.3s;
+}
+
+.tab button:hover {
+    background-color: red;
+}
+
+.tabcontent {
+    display: none;
+    padding: 6px 12px;
+    border: 1px solid #ccc;
+    border-top: none;
+  }
