@@ -38,18 +38,185 @@
                     <hr style="width: 100px;">
                     <h1>Documentation</h1>
                     <p>The game has had a long process of development, and here is the documentation! How did the developer thought about the game's process? How did the game start of as? Find out here! Available in Swedish and English.</p>
+                    <p>To give some background as to why I didn't think of making a game the first few entries is because I first wanted to spend the time I was given to get a certification in the programming language Python, however I realised that I would not have enough time to do this. I had to reconsider, and I then decided to make a game instead which turned out to be a success.</p>
                 </div>
             </div>
         </div>
         <div class="information">
             <div class="tab">
-                <button class="tablinks" onClick="documentationLang(event, 'English')" style="color: white;" id="defaultTab">English</button>
+                <button class="tablinks active" onClick="documentationLang(event, 'English')" style="color: white;" id="defaultTab">English</button>
                 <button class="tablinks" onClick="documentationLang(event, 'Swedish')" style="color: white;">Swedish</button>
             </div>
-            <div id="English" class="tabcontent">
-                <p>English documentation to be added</p>
+            <div id="English" class="tabcontent" style="display: block;">
+              <button onclick="this.parentElement.style.display='none'" style="background-color: transparent; color: white; border: none;"><u>Hide</u></button>
+              <p>
+                <span style="text-decoration:underline;">
+                  <strong>Documentation</strong>
+                </span>
+              </p>
+              <p>
+                <span style="text-decoration:underline;">Fri 12/4:</span>
+                <span>
+                  So far so good. I'm still on domain 1 though, and I'm afraid that I won't have time to do everything during the given time because all domains contain a lot of information.
+                </span>
+              </p>
+              <p>
+                <span style="text-decoration:underline;">Mon 15/4:</span>
+                <span>
+                  I have started with a text adventure in Python and I have made the beginning of the game. I trashed the idea to make a long and complicated text adventure because I don't really know how that would work in the format I have chosen to make it in, and because it became way too complicated for my level. Instead, I made the player start in a confined space and gave them a quest to get out, so kind of like an escape room but a little simpler.
+                </span>
+              </p>
+              <p>
+                <span>
+                  I got help by Jens to avoid a giant if-loop, but I didn't quite understand how I was going to do it in Python.
+                </span>
+              </p>
+              <p>
+                <span style="text-decoration:underline;">Fri 19/4:</span>
+                <span>
+                  I have worked a little from home and I managed to figure out how I was going to fix the endless bug. However, I encountered one more problem, namely the place where the program only wrote the same thing over and over again. I managed to fix that too after staring at the code a while. Today I fixed the game's first and maybe only puzzle. I haven't really decided this yet. I also switched name on a few variables to better fit the game's style and to make more sense. Things that have to be done are to code the second ending and possibly make all items locked to a single room. This would perhaps make the game harder to speedrum, but at the end of the day it is a bug that has to be fixed.
+                </span>
+              </p>
+              <p>
+                <span style="text-decoration:underline;">Mon 29/4:</span>
+                <span>
+                  I have worked from home now too and fixed a few bugs, for example that you no longer get an error in the terminal if you write the wrong commando. Today I have tried to create a combat system where you fight the mysterious man. There are still many bugs in this system that need to be fixed. I also have to figure out exactly how this combat system is supposed to work. What I know is that the player will roll a die to somehow fight the mysterious man.
+                </span>
+              </p>
+              <p>
+                <span style="text-decoration:underline;">Fri 3/5:</span>
+                <span>
+                  I have worked from home now too and fixed the combat system. You roll a die and best of three rounds win. To win becomes harder and harder for each round, but the possibility to win the entire fight is in total 50% and the possibility to lose is obviously also 50%. I have also added colours on a few bits of text which makes it easier to separate instructions from room descriptions. It also looks more nice with coloured text. When the game is done I added a question that asks the player if they want to play again, and if they answer yes the game restarts. However if they say no the game will ask a final confirmation question, and if they answer yes the game will quit in five seconds. If you answer no to the last question the game will restart. There are some small things left to be done that make the game look better. <span style="color:rgb(24, 128, 56);">Textwrap</span> for example.
+                </span>
+              </p>
+              <p>
+                <span style="text-decoration:underline;">Mon 6/5:</span>
+                <span>
+                  I have worked from home to fix
+                </span>
+                <span style="color:rgb(24, 128, 56);">textwrap</span>
+                <span>
+                  and to make it work. I also added a little indent to make it look better in smaller windows too. A problem that I encountered at home when I ran the .exe file was that the colours didn't want to show. Instead, it only looked like a bunch of symbols. I fixed this by searching on Google and change a few settings through the code.
+                </span>
+              </p>
+              <p>
+                <span>
+                  Today I have tried to implement a Swedish translation to the game and I will continue to translate the Swedish version later.
+                </span>
+              </p>
+              <p>
+                <a target="_blank" href="https://github.com/Frisaf/Escape/commits/main/">
+                  <span style="color:rgb(17, 85, 204);">https://github.com/Frisaf/Escape/commits/main/</span>
+                </a>
+              </p>
+              <p>
+                <span style="text-decoration:underline;">Mon 13/5;</span>
+                <span>
+                  I continued with the German translation that I started with at home. To my help, I used DeepL translator since I don't know enough German ot translate the entire game on my own.
+                </span>
+              </p>
+              <p>
+                <span style="text-decoration:underline;">Fri 17/5:</span>
+                <span>
+                  I finished the German translation and implemented commando aliases so that you don't have to write entire words when you want to do stuff. Instead, you can just write the first letter.
+                  Jag gjorde klart den tyska översättningen och implementerade kommandoalias så att man inte behöver skriva hela ord när man ska göra saker, utan bara första bokstaven.</span>
+              </p>
+              <p>
+                <span>Example:
+                </span>
+                <span style="color:rgb(24, 128, 56);">move right</span>
+                <span>
+                  becomes
+                </span>
+                <span style="color:rgb(24, 128, 56);">m r</span>
+                <span>
+                  or
+                </span>
+                <span style="color:rgb(24, 128, 56);">m right</span>
+                <span>
+                  or
+                </span>
+                <span style="color:rgb(24, 128, 56);">move r</span>
+                <span>.</span>
+              </p>
+              <p>
+                <span>
+                  I also implemented a feature that converts all uppercase to lowercase in the commandos.
+                </span>
+              </p>
+              <p>
+                <span style="text-decoration:underline;">Mon 20/5:</span>
+                <span>
+                  I fixed the bug that only allowed you to use commando aliases as allowed commandos. You can now write as the previous example from Friday. You could not do this before though. I think I have come to the point in the technological evolution process where I have a finished product.
+                </span>
+              </p>
+              <p>
+                <span style="text-decoration:underline;">Fri 24/5:</span>
+                <span>
+                  I made a trailer to the game in After Effects.</span>
+              </p>
+              <p>
+                <span style="text-decoration:underline;">
+                  <strong>Evaluation</strong>
+                </span>
+              </p>
+              <p>
+                <span>
+                  My first thought with this project was get a certificate in the programming language Python. As the time optimist I am, I thought I was going to make it in time, but unfortunately it had way too much content for me to ever do it in the weeks we had been given, so I had to trash that idea. Instead, I decided to make a text adventure in the same programming language. This would of course not reslut in any certificate, but I would have learned a lot in the end, which was the same goal as the certificate.
+                </span>
+              </p>
+              <p>
+                <span>
+                  My first idea with this text adventure didn't work out either unfortunately, because it would become way too big. The first idea I had was that the player would be on a giant open field, but I realised that this would be way too hard to code since the choices would be nearly endless. I changed my mind and decided to put the player in a dungeon in order to limit the amount of choices that the player could make. While I developed this idea I also learned that
+                </span>
+                <span style="color:rgb(24, 128, 56);">if</span>
+                <span>
+                  and
+                </span>
+                <span style="color:rgb(24, 128, 56);">else</span>
+                <span>
+                  loops wouldn't be very efficient in this project since it would create an endlessly long loop that would be incredibly difficult to work with. Instead, I choose to use a class and defined __init__ with arguments for the different room descriptions, where you can go and so on. Then I wrote the different locations in a dictionary. These locations are then used in the class
+                </span>
+                <span style="color:rgb(24, 128, 56);">Player</span>
+                <span>
+                  and then the different functions that are used in the game.
+                </span>
+              </p>
+              <p>
+                <span>
+                  The game contains many different rooms and has in total five different endings. You can fight an evil wizard and you can solve a labyrith. You can also die in the labyrinth and also against the wizard (but you don't really die).
+                </span>
+              </p>
+              <p>
+                <span>
+                  The idea to fight against the wizard was a little tricky to come up with since I didn't really know how I was going to implement a combat system in an efficient way. I had the idea to use a dice and randomly choose if the player lost or won, but I didn't know exactly how the game would handle the result after that. After a little bit of thinking I decided that I would let the player roll a die two or three times (best of three) and if the player rolls above a certain number two times the wizard win and if the player rolls below a certain number they win. This was very inspired of Dungeons &amp; Dragons, but instead of rolling above a certain number you need to roll below a certain number. I have heard that this is the case in Drakar och Demoner, but I am not certain since I have never played that rpg.
+                </span>
+              </p>
+              <p>
+                <span>
+                  I also had to create my own version of
+                </span>
+                <span style="color:rgb(24, 128, 56);">print</span>
+                <span>
+                  -function, since I wanted textwrap in order for the game to look better on smaller screens. I then created
+                </span>
+                <span style="color:rgb(24, 128, 56);">wprint</span>
+                <span>
+                  that does the same thing as
+                </span>
+                <span style="color:rgb(24, 128, 56);">print</span>
+                <span>
+                  but it makes an indent and changes row before the text has reached the end of the terminal. Not only does this make it easier to read, but it also prevents the text to look weird on smaller screens or if you don't play it in fullscreen.
+                </span>
+              </p>
+              <p>
+                <span>
+                  Overall, I think it has gone well, even though my two initial ideas didn't really work out at the end. If I hadn't had those ideas however I maybe wouldn't have had the final product that became the game "Escape!". I have learned a lot about functions and other things in Python, which was the goal, so I am really satisfied with this project. You could say that I am not the most satisfied with the result, but the progress. Sometimes the journey is the destination.
+                </span>
+              </p>
             </div>
             <div id="Swedish" class="tabcontent">
+              <button onclick="this.parentElement.style.display='none'" style="background-color: transparent; color: white; border: none;"><u>Hide</u></button>
                 <p>
                     <span style="text-decoration:underline;">
                       <strong>Dokumentation</strong>
@@ -189,6 +356,18 @@
                   <p>
                     <span>Överlag så tycker jag att det har gått ganska bra, trots att de två idéer som jag hade i början inte riktigt fungerade i slutändan. Om jag inte hade haft de idéerna så kanske jag inte skulle ha haft den slutprodukt som blev spelet “Escape!”. Jag har lärt mig en hel del om funktioner och annat i Python, vilket var målet, så jag är riktigt nöjd med det här projektet. Man skulle kunna säga att jag inte ens är mest nöjd med resultatet, utan själva produktionen. Ibland är det resan som är målet.</span>
                   </p>
+            </div>
+            <hr style="margin-top: 40px; margin-bottom: 40px;">
+            <div class="contactInfo">
+                <div class="mail">
+                    <p><i class="fa fa-envelope-o" aria-hidden="true"></i> completelyrandom69420@gmail.com</p>
+                </div>
+                <div class="github">
+                    <p><i class="fa fa-github" aria-hidden="true"></i> Frisaf</p>
+                </div>
+            </div>
+            <div style="text-align: center; font-size: small;">
+                <p>Feel free to open a pull request with new translations, or improve the already existing ones!</p>
             </div>
         </div>
         </div>

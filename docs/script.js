@@ -26,5 +26,3 @@ function documentationLang(evt, language) {
     document.getElementById(language).style.display = "block";
     evt.currentTarget.className += " active";
   }
-
-  document.getElementById("defaultTab").click();
