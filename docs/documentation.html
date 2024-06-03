@@ -43,14 +43,152 @@
         </div>
         <div class="information">
             <div class="tab">
-                <button class="tablinks" onClick="documentationLang(event, 'English')"></button>
-                <button class="tablinks" onClick="documentationLang(event, 'Swedish')"></button>
+                <button class="tablinks" onClick="documentationLang(event, 'English')" style="color: white;" id="defaultTab">English</button>
+                <button class="tablinks" onClick="documentationLang(event, 'Swedish')" style="color: white;">Swedish</button>
             </div>
-            <div class="tabcontent" id="English">
+            <div id="English" class="tabcontent">
                 <p>English documentation to be added</p>
             </div>
-            <div class="tabcontent" id="Swedish">
-                <p>Swedish documentation</p>
+            <div id="Swedish" class="tabcontent">
+                <p>
+                    <span style="text-decoration:underline;">
+                      <strong>Dokumentation</strong>
+                    </span>
+                  </p>
+                  <p>
+                    <span style="text-decoration:underline;">Fre 12/4:</span>
+                    <span>
+                      Det går helt okej så långt. Jag är fortfarande på domain 1 dock och är rädd att jag inte kommer att hinna allting under den givna tiden, för alla domains innehåller otroligt mycket information.</span>
+                  </p>
+                  <p>
+                    <span style="text-decoration:underline;">Mån 15/4:</span>
+                    <span>
+                      Jag har börjat på ett textäventyr i Python och gjort början. Jag skrotade idén om att göra ett långt och komplicerat textäventyr eftersom det inte riktigt skulle lämpa sig i det format jag valt att göra det i, och för att det dessutom blev alltför komplicerat för min nivå. Istället valde jag att spelaren är instängd i ett rum och måste ta sig ut, alltså lite som ett escape room fast lite mer simpelt.</span>
+                  </p>
+                  <p>
+                    <span>Jag fick även hjälp av Jens för att undvika en gigantisk if-sats, men jag fattade inte riktigt hur jag skulle göra det i Python.</span>
+                  </p>
+                  <p>
+                    <span style="text-decoration:underline;">Fre 19/4:</span>
+                    <span>
+                      Jag har jobbat lite hemma och lyckades då klura ut hur jag skulle fixa den oändliga buggen. Då stötte jag dock på ännu ett problem, nämligen att jag kom till ett ställe där programmet bara skrev samma sak om och om igen. Jag lyckades fixa även detta efter att ha stirrat på koden ett tag. Idag fixade jag spelets första och kanske enda pussel. Har inte riktigt bestämt mig än. Jag bytte dessutom namn på lite variabler för att bättre passa till spelets stil och för att vara lite mer logiska att arbeta med. Det som fortfarande behöver göras är att koda det andra slutet och möjligtvis göra så att alla items endast kan användas om man befinner sig på stället där saken i fråga faktiskt är. Detta skulle förvisso göra det svårare att speedrunna spelet, men det är i grund och botten en bugg som måste fixas.</span>
+                  </p>
+                  <p>
+                    <span style="text-decoration:underline;">Mån 29/4:</span>
+                    <span>
+                      Jag har jobbat hemma även nu och fixat lite buggar, bland annat att man inte får ett error i terminalen om man skriver fel kommando. Idag har jag försökt skapa ett stridssystem när man slåss mot den mystiska mannen. Det finns fortfarande många buggar i detta system dock som behöver göras någonting åt. Jag behöver även klura ut hur exakt stridssystemet ska fungera. Det jag vet är att man ska slå en tärning för att på något sätt kunna slåss mot den mystiska mannen.</span>
+                  </p>
+                  <p>
+                    <span style="text-decoration:underline;">Fre 3/5:</span>
+                    <span>
+                      Jag har även nu jobbat en hel del hemma där jag fixade stridssystemet så att man slår tärning och bäst av tre rundor vinner. Att vinna blir svårare och svårare för varje runda, men chansen att vinna hela striden är totalt 50%, och chansen att förlora blir då också givetvis 50%. Jag har även lagt till färger på vissa textstycken som gör det enklare att separera instruktioner från rumsbeskrivningar. Det ser även snyggare ut med text. När spelet är klart har jag lagt till en fråga som frågar om man vill spela igen, och om man svarar jag startar spelet om. Om man svarar nej däremot frågar spelet om man är säker. Svarar man ja stänger spelet av sig själv efter fem sekunder, och om man svarar nej startar spelet om sig. Det som är kvar att göra är lite småsaker som får spelet att se snyggare ut. Bland annat
+                    </span>
+                    <span style="color:rgb(24, 128, 56);">textwrap</span>
+                    <span>.</span>
+                  </p>
+                  <p>
+                    <span style="text-decoration:underline;">Mån 6/5:</span>
+                    <span>
+                      Jag har jobbat lite hemma för att fixa
+                    </span>
+                    <span style="color:rgb(24, 128, 56);">textwrap</span>
+                    <span>
+                      och få det att fungera. Jag lade även till lite indrag för att det ska se snyggare ut även i mindre fönster. Ett problem som jag stötte på hemma när jag körde .exe filen var att färgerna inte ville synas, utan endast såg ut som en massa symboler. Detta fixade jag genom att googla och ändra lite inställningar med hjälp av koden.</span>
+                  </p>
+                  <p>
+                    <span>Idag har jag försökt implementera en svensk översättning till spelet och kommer att fortsätta att översätta den svenska versionen av spelet vid ett senare tillfälle.</span>
+                  </p>
+                  <p>
+                    <a target="_blank" href="https://github.com/Frisaf/Escape/commits/main/">
+                      <span style="color:rgb(17, 85, 204);">https://github.com/Frisaf/Escape/commits/main/</span>
+                    </a>
+                  </p>
+                  <p>
+                    <span style="text-decoration:underline;">Mån 13/5;</span>
+                    <span>
+                      Jag fortsatte med de tyska översättningarna som jag började med hemma. Till min hjälp har jag DeepL translator eftersom jag inte kan så pass bra tyska för att översätta hela spelet.</span>
+                  </p>
+                  <p>
+                    <span style="text-decoration:underline;">Fre 17/5:</span>
+                    <span>
+                      Jag gjorde klart den tyska översättningen och implementerade kommandoalias så att man inte behöver skriva hela ord när man ska göra saker, utan bara första bokstaven.</span>
+                  </p>
+                  <p>
+                    <span>Exempel:
+                    </span>
+                    <span style="color:rgb(24, 128, 56);">move right</span>
+                    <span>
+                      blir till
+                    </span>
+                    <span style="color:rgb(24, 128, 56);">m r</span>
+                    <span>
+                      eller
+                    </span>
+                    <span style="color:rgb(24, 128, 56);">m right</span>
+                    <span>
+                      eller
+                    </span>
+                    <span style="color:rgb(24, 128, 56);">move r</span>
+                    <span>.</span>
+                  </p>
+                  <p>
+                    <span>Jag gjorde även så att det inte spelar någon roll om man skriver med stora eller små bokstäver.</span>
+                  </p>
+                  <p>
+                    <span style="text-decoration:underline;">Mån 20/5:</span>
+                    <span>
+                      Fixade en bugg som endast tillät att man använde kommandonas alias som tillåtna kommandon. Nu kan man skriva som tidigare exempel från i fredags, fast det kunde man inte tidigare. Jag tror jag har kommit så pass långt i teknikutvecklingsprocessen så att jag har en färdig produkt.</span>
+                  </p>
+                  <p>
+                    <span style="text-decoration:underline;">Fre 24/5:</span>
+                    <span>
+                      Jag gjorde en trailer till spelet i After Effects.</span>
+                  </p>
+                  <p>
+                    <span style="text-decoration:underline;">
+                      <strong>Utvärdering</strong>
+                    </span>
+                  </p>
+                  <p>
+                    <span>Min första tanke med projektet var att jag skulle certifiera mig i programmeringsspråket Python. Som den tidsoptimist jag är trodde jag att jag skulle hinna det, men tyvärr var det alltför mycket innehåll för att jag någonsin skulle hinna det på de veckor vi hade på oss, så jag var tvungen att skrota den idén. Istället bestämde jag mig för att göra ett textäventyr i samma programmeringsspråk. Det skulle givetvis inte resultera i någon certifiering, men jag skulle lära mig en hel del i slutänden, vilket var samma mål som med certifieringen.</span>
+                  </p>
+                  <p>
+                    <span>Den idé jag hade från början med textäventyret fungerade tyvärr inte heller, eftersom det skulle bli alltför stort. Den första idén var nämligen att spelaren skulle befinna sig i ett öppet fält, men jag insåg att detta skulle bli alltför svårt att programmera då valen skulle vara oändliga. Jag ändrade mig istället till att sätta spelaren i en håla, en “dungeon”, för att begränsa de val som spelaren kunde göra. Medan jag utvecklade denna idé lärde jag mig även att
+                    </span>
+                    <span style="color:rgb(24, 128, 56);">if</span>
+                    <span>
+                      och
+                    </span>
+                    <span style="color:rgb(24, 128, 56);">else</span>
+                    <span>
+                      satser inte skulle vara så effektiva i detta projekt då det skulle bli en oändligt lång loop som skulle vara otroligt svår att jobba med. Istället använde jag mig av en klass och definierade __init__ med argument för beskrivningarna till de olika rummet, vart man kan gå osv. I ett dictionary skrev jag sedan de olika platserna. Dessa platser används sedan i klassen
+                    </span>
+                    <span style="color:rgb(24, 128, 56);">Player</span>
+                    <span>
+                      och sedan i de olika funktionerna som används i spelet.</span>
+                  </p>
+                  <p>
+                    <span>Spelet innehåller flera olika rum och har totalt fem olika slut. Man kan slåss mot en ond trollkarl och man kan lösa en liten labyrint. Man kan även dö i labyrinten och även mot trollkarlen (fast man dör egentligen inte).</span>
+                  </p>
+                  <p>
+                    <span>Idén om att slåss mot trollkarlen var lite klurig att ta fram då jag inte riktigt visste hur jag skulle kunna implementera ett stridssystem på ett effektivt sätt. Jag hade idén om att använda slumpen och låta spelaren rulla en tärning, men exakt hur spelet sedan skulle hantera resultatet visste jag inte riktigt. Efter lite tänkande bestämde jag mig för att jag skulle låta spelaren rulla en tärning två eller tre gånger (bäst av tre) och om spelaren rullar över ett visst tal två gånger vinner trollkarlen och om spelaren rullar under ett visst tal två gånger så vinner spelaren. Detta var ganska inspirerat av Dungeons &amp; Dragons, men istället för att rulla över ett visst tal ska man rulla under. Jag har hört att så är fallet i Drakar och Demoner, men jag är inte riktigt säker eftersom jag aldrig har spelat rollspelet.</span>
+                  </p>
+                  <p>
+                    <span>Jag har även behövt skapa en egen version av
+                    </span>
+                    <span style="color:rgb(24, 128, 56);">print</span>
+                    <span>-funktionen, eftersom jag ville ha textwrapping för att spelet skulle se bättre ut på mindre skärmar. Då skapade jag
+                    </span>
+                    <span style="color:rgb(24, 128, 56);">wprint</span>
+                    <span>
+                      som gör samma sak som
+                    </span>
+                    <span style="color:rgb(24, 128, 56);">print</span>
+                    <span>, men den skickar in texten en bit mot mitten och byter rad innan texten nått kanten på terminalen. Detta är inte bara lättare att läsa, utan det förhindrar även texten att se märklig ut på mindre skärmar eller om man inte spelar det i fullskärm.</span>
+                  </p>
+                  <p>
+                    <span>Överlag så tycker jag att det har gått ganska bra, trots att de två idéer som jag hade i början inte riktigt fungerade i slutändan. Om jag inte hade haft de idéerna så kanske jag inte skulle ha haft den slutprodukt som blev spelet “Escape!”. Jag har lärt mig en hel del om funktioner och annat i Python, vilket var målet, så jag är riktigt nöjd med det här projektet. Man skulle kunna säga att jag inte ens är mest nöjd med resultatet, utan själva produktionen. Ibland är det resan som är målet.</span>
+                  </p>
             </div>
         </div>
         </div>

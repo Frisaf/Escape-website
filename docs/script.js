@@ -12,14 +12,19 @@ window.onscroll = function() {
 
 function documentationLang(evt, language) {
     var i, tabcontent, tablinks;
+  
     tabcontent = document.getElementsByClassName("tabcontent");
     for (i = 0; i < tabcontent.length; i++) {
-        tabcontent[i].style.display = "none";
+      tabcontent[i].style.display = "none";
     }
+  
     tablinks = document.getElementsByClassName("tablinks");
     for (i = 0; i < tablinks.length; i++) {
-        tabcontent[i].className = tablinks[i].className.replace(" active", "")
+      tablinks[i].className = tablinks[i].className.replace(" active", "");
     }
-    document.getElementById(documentationLang).style.display = "block";
-    evt.currentTarget.className += " active"
-}
+  
+    document.getElementById(language).style.display = "block";
+    evt.currentTarget.className += " active";
+  }
+
+  document.getElementById("defaultTab").click();
